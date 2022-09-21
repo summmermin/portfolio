@@ -5,9 +5,81 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/01.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="01.js"></script>
 </head>
 <body>
-  
+  <header>
+    <nav>
+      <ul>
+        <li data-menuanchor="section1" class="home"><a href="#section1">section1</a></li>
+        <li data-menuanchor="section2" class="profile"><a href="#section2">section2</a></li>
+        <li><a href="#">logo</a></li>
+        <li data-menuanchor="section3" class="project"><a href="#section3">section3</a></li>
+        <li data-menuanchor="section4" class="contact"><a href="#section4">section4</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section" id="section1">
+      <h2>section1</h2>
+    </section>
+    <section class="section" id="section2">
+      <h2>section2</h2>
+      <div class="animation">
+        <div class="chart">
+          <h2 data-num="90">0</h2>
+          <svg>
+            <circle cx="60" cy="60" r="50"></circle>
+          </svg>
+        </div>
+        <div class="chart">
+          <h2 data-num="80">0</h2>
+          <svg>
+            <circle cx="60" cy="60" r="50"></circle>
+          </svg>
+        </div>
+        <div class="chart">
+          <h2 data-num="90">0</h2>
+          <svg>
+            <circle cx="60" cy="60" r="50"></circle>
+          </svg>
+        </div>
+        <div class="chart">
+          <h2 data-num="90">0</h2>
+          <svg>
+            <circle cx="60" cy="60" r="50"></circle>
+          </svg>
+        </div>
+        <div class="chart">
+          <h2 data-num="85">0</h2>
+          <svg>
+            <circle cx="60" cy="60" r="50"></circle>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="section3">
+      <div class="slide">
+        <h2>section3-1</h2>
+      </div>
+      <div class="slide">
+        <h2>section3-2</h2>
+      </div>
+      <div class="slide">
+        <h2>section3-3</h2>
+      </div>
+      <div class="slide">
+        <h2>section3-4</h2>
+      </div>
+    </section>
+    <section class="section" id="section4">
+      <h2>section4</h2>
+    </section>
+    <section class="section fp-auto-height">
+      <h2>footer</h2>
+    </section>
+  </main>
 </body>
 </html>

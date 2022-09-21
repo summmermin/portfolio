@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(255, 253, 248, 0.6);
+  z-index: 100;
+  height: 70px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  margin: 0 20px;
+  list-style: none;
+}
+header nav ul li a {
+  display: block;
+  font-size: 20px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+  line-height: 74px;
+  text-align: center;
+  transition: color 0.25s;
+}
+header nav ul li.active a {
+  color: red;
+  font-size: 15px;
+  
+}
+main {
+  text-align: center;
+}
+.section {
+  height: 900px;
+}
+
+/* 스킬 부분 적용 */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.progress-bar {
+  position: relative;
+  width: 960px;
+  height: 30px;
+  margin: 3em auto;
+  border: 1px solid green;
+}
+.progress-bar .bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background-color: green;
+  /* animation: width 3s; */
+}
+@keyframes width {
+  to {
+    width: 30%;
+  }
+}
+.progress-bar .rate {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  bottom: 0;
+  line-height: 30px;
+  font-size: 1.2em;
+  color: green;
+}
+.content {
+  height: 800px;
+  font-size: 3em;
+}
+.animation {
+  width: 80%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+}
+.animation .chart {
+  margin: 0 20px;
+  position: relative;
+}
+.animation .chart h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999999;
+}
+.animation .chart svg {
+  width: 172px;
+  height: 128px;
+  fill: #ebebeb;
+  stroke-width: 20;
+  stroke-dasharray: 315;
+  stroke-dashoffset: 315;
+  stroke: #ffc114;
+  transform: rotate(-90deg);
+  stroke-linecap: round;
+}
+.animation .chart:nth-child(1) circle {
+  stroke: aqua;
+}
+.animation .chart:nth-child(2) circle {
+  stroke: goldenrod;
+}
+.animation .chart:nth-child(3) circle {
+  stroke: slateblue;
+}
+/* 스킬 부분 적용 끝 */
