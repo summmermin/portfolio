@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -10,8 +10,7 @@ header {
   background: rgba(255, 253, 248, 0.6);
   z-index: 100;
   height: 70px;
-  max-width: 1200px;
-  margin: auto;
+  box-shadow: 0px 1px 10px #DDDDDD;
 }
 
 header nav ul {
@@ -19,7 +18,7 @@ header nav ul {
   justify-content: space-between;
 }
 header nav ul li {
-  margin: 0 20px;
+  margin: 0 50px;
   list-style: none;
 }
 header nav ul li a {
@@ -30,19 +29,40 @@ header nav ul li a {
   font-weight: 500;
   width: 100%;
   line-height: 74px;
-  text-align: center;
   transition: color 0.25s;
 }
 header nav ul li.active a {
   color: red;
   font-size: 15px;
-  
 }
 main {
   text-align: center;
 }
 .section {
-  height: 900px;
+  height: 800px;
+}
+.fixed {
+  position: fixed;
+  width: 92px;
+  height: 88px;
+  right: 0;
+  top: 450px;
+}
+.fixed_1 {
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 8px 0px 0px 8px;
+  width: 92px;
+  height: 25px;
+  margin: 4px 0;
+}
+.fixed_phone {
+  border-radius: 50%;
+  position: fixed;
+  width: 38px;
+  height: 38px;
+  bottom: 57px;
+  right: 57px;
+  background: #16b686;
 }
 
 /* 스킬 부분 적용 */
