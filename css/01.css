@@ -1,6 +1,20 @@
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: "GmarketSansMedium";
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.025em;
 }
 header {
   position: relative;
@@ -10,7 +24,16 @@ header {
   background: rgba(255, 253, 248, 0.6);
   z-index: 100;
   height: 70px;
-  box-shadow: 0px 1px 10px #DDDDDD;
+  box-shadow: 0px 1px 10px #dddddd;
+}
+
+header nav {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  transition: all 0.5s;
 }
 
 header nav ul {
@@ -30,30 +53,186 @@ header nav ul li a {
   width: 100%;
   line-height: 74px;
   transition: color 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+header nav ul li a.logo {
+  padding-top: 10px;
 }
 header nav ul li.active a {
   color: red;
   font-size: 15px;
 }
-main {
+
+main #section1 {
   text-align: center;
 }
+main .main-visual .main-visual-img {
+  margin: 70px 0;
+}
+main .main-visual .profile-wave {
+  background: url(../img/Frame.png);
+}
+main .main-visual .main-visual-txt {
+  font-size: 26px;
+  padding-top: 80px;
+  color: #444;
+}
+main .main-visual .main-visual-tit {
+  font-size: 44px;
+  margin-top: 10px;
+  color: #444;
+  position: relative;
+}
+main .main-visual .txt-wrap .profile-btit {
+  color: #483f27;
+}
+main .main-visual .txt-wrap .profile-mtit {
+  color: #202020;
+}
+main .main-visual .main-visual-tit span {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 270px;
+  height: 19px;
+  background: #fab465ad;
+  top: 42px;
+  border-radius: 10px;
+  z-index: 6;
+  animation: line 3s infinite;
+  animation-direction: alternate;
+}
+#section2 .profile {
+  display: flex;
+  justify-content: center;
+  margin: 150px 0;
+}
+#section2 .profile .profile-img img {
+  border-radius: 50px;
+}
+#section2 .profile .git-img {
+  display: flex;
+  align-items: flex-end;
+}
+#section2 .profile .git-img a {
+  margin: 0 0 0 -85px;
+}
+#section2 .profile .txt-wrap {
+  max-width: 588px;
+  margin: 0 0px 0 125px;
+}
+#section2 .profile .txt-wrap div {
+  margin: 0 0 20px 0;
+}
+#section2 .profile .txt-wrap .profile-stit,#section4 .mywork .work-tit .work-stit{
+  font-size: 22px;
+  font-weight: 600;
+}
+#section2 .profile .txt-wrap .profile-btit {
+  font-size: 34px;
+}
+#section2 .profile .txt-wrap .profile-btit span {
+  color: #ff7c28;
+}
+#section2 .profile .txt-wrap .profile-mtit {
+  font-size: 16px;
+  color: #202020;
+  max-width: 570px;
+}
+#section2 .profile .txt-wrap .profile-main {
+  width: 100%;
+  border-bottom: solid 2px #ff7c28;
+  margin: 55px 0 0 0;
+}
+#section2 .profile .txt-wrap .profile-main ul {
+  display: flex;
+}
+#section2 .profile .txt-wrap .profile-main ul li {
+  width: 33.3%;
+  text-align: center;
+  font-size: 18px;
+}
+#section3{
+  margin: 150px auto 0 auto;
+}
+#section3 .project {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+#section3 .project .project-index {
+  width: 24%;
+  padding-left: 11%;
+}
+#section3 .project .project-index h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+#section3 .project .slide-contorls ul {
+  margin: 20px 0 0 0;
+}
+#section3 .project .slide-contorls ul li {
+  text-align: right;
+}
+#section3 .project-visual {
+  float: right;
+  margin-left: 130px;
+  margin-top: 20px;
+  width: 55%;
+  height: 640px;
+  font-size: 16px;
+  color: #888;
+}
+#section4{
+  text-align: center;
+}
+#section4 .mywork .work-btit{
+  font-size: 41px;
+}
+#section5 h2{
+  font-size: 45px;
+  text-align: center;
+  font-weight: 500;
+}
+#section6 h2{
+  font-size: 45px;
+  text-align: center;
+  font-weight: 500;
+}
+#section6 h2 span{
+  color: #ff7c28;
+}
+#footer {
+  background: #f8c895;
+  width: 100%;
+  height: 265px;
+  margin: 35px auto 0 auto;
+}
+
+.footer {
+  height: 75px;
+  border-bottom: 1px solid #888;
+}
+
 .section {
-  height: 800px;
+  height: 900px;
+  overflow: hidden;
 }
 .fixed {
   position: fixed;
-  width: 92px;
-  height: 88px;
+  width: 124px;
+  height: 101px;
   right: 0;
   top: 450px;
 }
 .fixed_1 {
-  background: rgba(0, 0, 0, 0.45);
+  background: rgb(248 200 149);
   border-radius: 8px 0px 0px 8px;
-  width: 92px;
-  height: 25px;
-  margin: 4px 0;
+  width: 137px;
+  height: 32px;
+  margin: 6px 0;
 }
 .fixed_phone {
   border-radius: 50%;
@@ -149,3 +328,48 @@ a {
   stroke: slateblue;
 }
 /* 스킬 부분 적용 끝 */
+/* work-slide */
+.slide_wrapper{
+	padding-top:200px;
+}
+.slides{
+  left: 0;
+  top: 0;
+  height: 200px;
+  width: 100%;
+  overflow-y: hidden;
+}
+.slides.animated{
+	transition: 0.5s ease-out;
+}
+.slides li{
+  width: 20%;
+  height: 200px;
+  background: #ccc;
+  float: left;
+}
+
+.controls{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.controls span{
+	background:#333;
+	color: #fff;
+	padding:10px 20px;
+	margin:0 10px;
+	display: inline-block;
+}
+
+@media (max-width:700px){
+	.container {
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	.slide_wrapper{
+		width:100%;
+	}
+}
+/* work-slide 끝*/

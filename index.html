@@ -1,91 +1,248 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>민정이의 포트폴리오</title>
-  <link rel="stylesheet" href="css/01.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="01.js"></script>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li data-menuanchor="section1" class="home"><a href="#section1">section1</a></li>
-        <li data-menuanchor="section2" class="profile"><a href="#section2">section2</a></li>
-        <li><a href="#">logo</a></li>
-        <li data-menuanchor="section3" class="project"><a href="#section3">section3</a></li>
-        <li data-menuanchor="section4" class="contact"><a href="#section4">section4</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="section" id="section1">
-      <h2>section1</h2>
-    </section>
-    <section class="section" id="section2">
-      <h2>section2</h2>
-      <div class="animation">
-        <div class="chart">
-          <h2 data-num="90">0</h2>
-          <svg>
-            <circle cx="60" cy="60" r="50"></circle>
-          </svg>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>민정이의 포트폴리오</title>
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/01.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/02.js"></script>
+    <!-- <script src="js/01.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li data-menuanchor="section1" class="home">
+            <a href="#section1">HOME</a>
+          </li>
+          <li data-menuanchor="section2" class="profile">
+            <a href="#section2">PROFILE</a>
+          </li>
+          <li>
+            <a class="logo" href="#"><img src="img/Group 57.png" alt="" /></a>
+          </li>
+          <li data-menuanchor="section3" class="project">
+            <a href="#section3">PROJECTS</a>
+          </li>
+          <li data-menuanchor="section4" class="contact">
+            <a href="#section4">WORKS</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section" id="section1">
+        <div class="main-visual">
+          <div class="main-visual-txt">
+            속시원한 코딩, 상큼한 감각으로 프로젝트를 수행하는
+          </div>
+          <div class="main-visual-tit">
+            <span class="line"></span>
+            환타 김민정입니다.
+          </div>
+          <div class="main-visual-img">
+            <img src="img/home.png" alt="환타 김민정의 사진" width="580" />
+          </div>
         </div>
-        <div class="chart">
-          <h2 data-num="80">0</h2>
-          <svg>
-            <circle cx="60" cy="60" r="50"></circle>
-          </svg>
+      </section>
+      <section class="section" id="section2">
+        <div class="profile">
+          <div class="profile-img">
+            <img
+              src="img/profile.jpg"
+              alt="김민정의 소개사진입니다."
+              height="651"
+            />
+          </div>
+          <div class="profile-wave"></div>
+          <div class="git-img">
+            <a href="https://github.com/summmermin">
+              <img
+                src="img/Group 62.png"
+                alt="김민정의 깃허브 버튼입니다"
+                height="142"
+              />
+            </a>
+          </div>
+          <div class="txt-wrap">
+            <div class="profile-stit">
+              <img src="img/Group 59.png" alt="" /> I’M A DEVELOPER
+            </div>
+            <div class="profile-btit">
+              어떤 프로젝트도 속시원하게 처리하는 코딩 환타
+              <span>김민정</span>입니다
+            </div>
+            <div class="profile-mtit">
+              “새롭게 변화하는 웹 환경에 맞추어 때에 맞는 디자인과 정확한 코드로
+              속시원한 프로젝트 진행을 완수해나가겠습니다!”
+            </div>
+            <div class="profile-main">
+              <ul>
+                <li>MYDETAILS</li>
+                <li>MY SKILLS</li>
+                <li>MY AWARDS</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="chart">
-          <h2 data-num="90">0</h2>
-          <svg>
-            <circle cx="60" cy="60" r="50"></circle>
-          </svg>
+      </section>
+      <section class="section" id="section3">
+        <div class="project">
+          <div class="project-index">
+            <h2>PROJECTS</h2>
+            <div class="slide-contorls">
+              <ul>
+                <li class="page">한국철도공사</li>
+                <li class="page">닌텐도</li>
+                <li class="page">엘르</li>
+                <li class="page">벤츠</li>
+                <li class="page">하이브뮤직</li>
+                <li class="page">워치트레이닝클럽</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="swiper-container">
+              <div class="slide-view">
+                <div class="slides-v">
+                  <div class="project-1">
+                    <div class="project-tit">
+                      <a href="https://summmermin.github.io/project_01/"
+                        >한국철도공사</a
+                      >
+                      <a href="https://summmermin.github.io/project_01/"
+                        >Korail</a
+                      >
+                    </div>
+                    <div class="project-d">
+                      <ul>
+                        <li>제작기간 : 3주</li>
+                        <li>관공서</li>
+                        <li></li>
+                      </ul>
+                      <div class="pj-con">
+                        header, section, footer 등의 Html 구조를 배우며 처음
+                        작업한 프로젝트입니다. CSS를 활용한 drop down menu와
+                        slide, sticky 메뉴, 게시판과 form 태그 등 웹의 기본적인
+                        기능을 적용하며 수많은 시행착오를 겪은 애정이 깃든
+                        작업이었습니다.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-2"></div>
+                  <div class="project-3"></div>
+                  <div class="project-4"></div>
+                  <div class="project-5"></div>
+                  <div class="project-6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projecct-scroll">
+            <span class="left"></span><span class="right"></span>
+          </div>
         </div>
-        <div class="chart">
-          <h2 data-num="90">0</h2>
-          <svg>
-            <circle cx="60" cy="60" r="50"></circle>
-          </svg>
+      </section>
+      <section class="section" id="section4">
+        <div class="mywork">
+          <div class="work-tit">
+            <div class="work-stit">
+              <img src="img/Group 59.png" alt="" />MY WORK
+            </div>
+            <div class="work-btit">See My Experiens</div>
+          </div>
+          <div class="work-slide">
+            <div class="container">
+              <div class="slide_wrapper">
+                <ul class="slides">
+                  <li>slide 01</li>
+                  <li>slide 02</li>
+                  <li>slide 03</li>
+                  <li>slide 04</li>
+                  <li>slide 04</li>
+                  <li>slide 04</li>
+                  <li>slide 04</li>
+                  <li>slide 05</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="chart">
-          <h2 data-num="85">0</h2>
-          <svg>
-            <circle cx="60" cy="60" r="50"></circle>
-          </svg>
+      </section>
+      <section class="section" id="section5">
+        <h2>my portfolio history</h2>
+        <div class="history">
+          <div class="h-1"></div>
+          <div class="h-2"></div>
+          <div class="h-3"></div>
         </div>
-      </div>
-    </section>
-    <section class="section" id="section3">
-      <div class="slide">
-        <h2>section3-1</h2>
-      </div>
-      <div class="slide">
-        <h2>section3-2</h2>
-      </div>
-      <div class="slide">
-        <h2>section3-3</h2>
-      </div>
-      <div class="slide">
-        <h2>section3-4</h2>
-      </div>
-    </section>
-    <section class="section" id="section4">
-      <h2>section4</h2>
-    </section>
-    <section class="section fp-auto-height">
-      <h2>footer</h2>
-    </section>
-  </main>
-  <div class="fixed">
-    <div class="fixed_1"></div>
-    <div class="fixed_1"></div>
-    <div class="fixed_1"></div>
-  </div>
-  <div class="fixed_phone"></div>
-</body>
+      </section>
+      <section class="section" id="section6">
+        <h2>같이 일하고 싶은  1등 코딩 <span>환타</span>
+          지금 연락주세요!</h2>
+          <div class="contact">
+            <div class="contact-img"><a href="#"><img src="img/Group 63.png" alt=""></a></div>
+            <div class="contact-txt">
+              매번 성장하고 싶은 열정으로 살아가고 있습니다! 프론트, 백앤드, 퍼플리셔 친구들과 꾸준히 프로젝트 작업을 진행중에 있습니다. 함께 프로젝트 진행한 사람들 모두 다음번에도 같이 하고 싶은 팀원 1등입니다. 한번 같이 일하면 꾸준히 인연을 이어가고 싶은 그 매력!
+제가 보여드리겠습니다!
+<br>
+These companies release their own versions of the operating systems with minor changes, and yet always with the same bottom line.
+            </div>
+            <div class="contact-watchout">
+              “The following article covers a topic that has recently moved to center stage–at least it seems that way. If you’ve been thinking you need to know more about unconditional love, here’s your opportunity.”
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="footer_nav">
+          <div class="container_fn cf">
+            <ul>
+              <li class="fl"><a href="#">개인정보처리방침</a></li>
+              <li class="fl"><a href="#">이메일무단수집거부</a></li>
+              <li class="fl"><a href="#">저작권정책</a></li>
+            </ul>
+          </div>
+          <div class="footer_sns">
+            <ul>
+              <li><a href="https://www.youtube.com/" class="fsns_1"></a></li>
+              <li><a href="https://www.facebook.com/" class="fsns_2"></a></li>
+              <li><a href="https://www.instagram.com/" class="fsns_3"></a></li>
+              <li>
+                <a href="https://section.blog.naver.com/" class="fsns_4"></a>
+              </li>
+              <li><a href="https://twitter.com/" class="fsns_5"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <div>
+            <p>
+              <span>기획자 : 김민정</span>
+              <span>개발자 : 김민정</span>
+              <span>디자인 : 김민정</span>
+              <span>서울시 강남구 수서동 거주</span>
+              <br />
+              <span>지금 당장 연락주세요</span>
+              <span>대표전화 : 042-472-5000</span>
+            </p>
+            <br />
+            <span>COPYRIGHT ⓒ KIMMINJEONG. ALL RIGHTS RESERVED.</span>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <div class="fixed">
+      <div class="fixed_1">깃허브 바로가기</div>
+      <div class="fixed_1">이력서 바로가기</div>
+      <div class="fixed_1">연락하기</div>
+    </div>
+  </body>
 </html>
