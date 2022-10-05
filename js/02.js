@@ -1,37 +1,20 @@
-$(function () {
-  const totalLength = 345;
-  const animation = $(".animation");
-  const progressBox = $(".animation .chart");
-  const progressOst = $(".animation").offset().top - 600;
+// 탭버튼 구현
+const tabList = document.querySelectorAll(".tab_menu .list li");
+const contents = document.querySelectorAll(".tab_menu .cont_area .cont");
+let activeCont = "";
 
-  $(window).scroll(function () {
-    if ($(window).scrollTop() >= progressOst) {
-      if (!animation.hasClass("isAni")) {
-        progressAni();
-        animation.addClass("isAni");
-      }
+for (var i = 0; i < tabList.length; i++) {
+  tabList[i].querySelector(".btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    for (var j = 0; j < tabList.length; j++) {
+      tabList[j].classList.remove("is_on");
+
+      contents[j].style.display = "none";
     }
+
+    this.parentNode.classList.add("is_on");
+
+    activeCont = this.getAttribute("href");
+    document.querySelector(activeCont).style.display = "block";
   });
-
-  function progressAni() {
-    progressBox.each(function () {
-      let $this = $(this);
-      let title = $this.find("h2");
-      let targetNum = title.attr("data-num");
-      let circle = $this.find("circle");
-
-      $({ rate: 0 }).animate(
-        { rate: targetNum },
-        {
-          duration: 2000,
-          progress: function () {
-            let now = this.rate;
-            let amount = totalLength - (totalLength * now) / 100;
-            title.text(Math.floor(now));
-            circle.css({ strokeDashoffset: amount });
-          },
-        }
-      );
-    });
-  }
-});
+}
