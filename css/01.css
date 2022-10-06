@@ -1,591 +1,615 @@
 @charset "utf-8";
 
 .section {
-
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .slide-container {
-    width: 100%;
-    margin: 150px 0 0 0;
+  width: 100%;
+  margin: 150px 0 0 0;
 }
 
 .slide-container .slide-view {
-    width: 700px;
-    margin: 0 auto;
-    overflow: hidden;
+  width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 /*슬라이드 전체길이설정*/
 .slide_wrap {
-    position: relative;
-    left: 0;
-    width: calc(500px * 5);
-    /* height: 500px; */
-    margin: auto;
+  position: relative;
+  left: 0;
+  width: calc(500px * 5);
+  /* height: 500px; */
+  margin: auto;
 }
 
 .slides:after {
-    content: "";
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .slides {
-    width: 100%;
-    /* height: 500px; */
+  width: 100%;
+  /* height: 500px; */
 }
 
 .slide {
-    float: left;
-    width: 700px;
-    /* height: 500px; */
-    background: red;
-}
-
-/* 애니메이션 */
-.animation {
-    width: 50%;
-    height: 500px;
-    background: rgb(28, 170, 158);
-    transform: translateX(-100%);
-    transition: transform 2s;
-}
-
-.animation.in {
-    transform: translateX(0);
+  float: left;
+  width: 700px;
+  /* height: 500px; */
+  background: red;
 }
 
 /* section 스크롤이벤트 적용완료 */
 header {
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: rgba(255, 253, 248, 0.6);
-    z-index: 100;
-    height: 70px;
-    box-shadow: 0px 1px 10px #dddddd;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(255, 253, 248, 0.6);
+  z-index: 100;
+  height: 70px;
+  box-shadow: 0px 1px 10px #dddddd;
 }
 
 header nav {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    position: relative;
-    top: 0;
-    transition: all 0.5s;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  transition: all 0.5s;
 }
 
 header nav ul {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 header nav ul li {
-    margin: 0 50px;
-    list-style: none;
+  margin: 0 50px;
+  list-style: none;
 }
 
 header nav ul li a {
-    display: block;
-    font-size: 20px;
-    color: #333;
-    text-transform: uppercase;
-    font-weight: 500;
-    width: 100%;
-    line-height: 74px;
-    transition: color 0.25s;
-    font-family: "Montserrat", sans-serif;
+  display: block;
+  font-size: 20px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+  line-height: 74px;
+  transition: color 0.25s;
+  font-family: "Montserrat", sans-serif;
 }
 
 header nav ul li a.logo {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 header nav ul li.active a {
-    color: red;
-    font-size: 15px;
+  color: red;
+  font-size: 15px;
 }
 
-main #section1 {
-    text-align: center;
-    background-color: #c9d0d52b;
-    position: relative;
+#section1 {
+  text-align: center;
+  background-color: #c9d0d52b;
+  position: relative;
 }
 
 #section1 .s1-bubble {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
 }
 
-
-
 .s1-bubble img {
-    width: 50px;
-    opacity: 0;
-    animation: bubbles 7s infinite;
+  width: 50px;
+  opacity: 0;
+  animation: bubbles 7s infinite;
 }
 
 .s1-bubble img:nth-child(1) {
-    animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .s1-bubble img:nth-child(2) {
-    animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .s1-bubble img:nth-child(3) {
-    animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 .s1-bubble img:nth-child(4) {
-    animation-delay: 4.5s;
+  animation-delay: 4.5s;
 }
 
 .s1-bubble img:nth-child(5) {
-    animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 .s1-bubble img:nth-child(6) {
-    animation-delay: 6s;
+  animation-delay: 6s;
 }
 
 .s1-bubble img:nth-child(7) {
-    animation-delay: 7s;
+  animation-delay: 7s;
 }
 
 @keyframes bubbles {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
 
-    50% {
-        opacity: 1;
-    }
+  50% {
+    opacity: 1;
+  }
 
-    70% {
-        opacity: 1;
-    }
+  70% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateY(-80vh);
-        opacity: 0;
-    }
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
 }
 
 #section1 .s1-wave {
-    position: absolute;
-    bottom: -11px;
-    left: 0;
-    right: 0;
-    width: 100%;
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 .main-visual .main-visual-img {
-    margin: 40px 0;
+  margin: 40px 0;
 }
 
 .main-visual .profile-wave {
-    background: url(../img/Frame.png);
+  background: url(../img/Frame.png);
 }
 
 .main-visual .main-visual-txt {
-    font-size: 26px;
-    padding-top: 80px;
-    color: #444;
+  font-size: 26px;
+  padding-top: 80px;
+  color: #444;
 }
 
 .main-visual .main-visual-tit {
-    font-size: 44px;
-    margin-top: 10px;
-    color: #444;
-    position: relative;
+  font-size: 44px;
+  margin-top: 10px;
+  color: #444;
+  position: relative;
 }
 
 .main-visual .txt-wrap .profile-btit {
-    color: #483f27;
+  color: #483f27;
 }
 
 .main-visual .txt-wrap .profile-mtit {
-    color: #202020;
+  color: #202020;
 }
 
-#section1{
-    text-align: center;
+#section1 {
+  text-align: center;
 }
 #section2 .profile {
-    display: flex;
-    justify-content: center;
-    margin: 150px 0;
+  display: flex;
+  justify-content: center;
+  margin: 150px 0;
 }
 
 #section2 .profile .profile-img img {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 #section2 .profile .git-img {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
 #section2 .profile .git-img a {
-    margin: 0 0 0 -85px;
+  margin: 0 0 0 -85px;
 }
 
 #section2 .profile .txt-wrap {
-    max-width: 588px;
-    margin: 0 0px 0 125px;
+  max-width: 588px;
+  margin: 0 0px 0 125px;
 }
 
 #section2 .profile .txt-wrap div {
-    margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 #section2 .profile .txt-wrap .profile-stit,
 #section4 .mywork .work-tit .work-stit {
-    font-size: 22px;
-    font-weight: 600;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 #section2 .profile .txt-wrap .profile-btit {
-    font-size: 34px;
+  font-size: 34px;
 }
 
 #section2 .profile .txt-wrap .profile-btit span {
-    color: #ff7c28;
+  color: #ff7c28;
 }
 
 #section2 .profile .txt-wrap .profile-mtit {
-    font-size: 16px;
-    color: #202020;
-    max-width: 570px;
+  font-size: 16px;
+  color: #202020;
+  max-width: 570px;
 }
 
 #section2 .profile .txt-wrap .profile-main {
-    width: 100%;
-    margin: 55px 0 0 0;
+  width: 100%;
+  margin: 55px 0 0 0;
 }
 
-
 #section2 .profile .txt-wrap .profile-main .list li {
-    width: 33.3%;
-    text-align: center;
-    font-size: 18px;
+  width: 43%;
+  text-align: center;
+  font-size: 18px;
 }
 
 .menu-li {
-    width: 100%;
+  width: 100%;
 }
 
 .menu-li li {
-    width: 45%;
+  width: 50%;
+}
+.menu-li li span:last-child{
+    font-family: sans-serif;
+    letter-spacing: 0;
+    font-size: 15px;
+    color: #111;
 }
 
 #section3 {
-    margin: 150px auto 0 auto;
+  margin: 150px auto 0 auto;
 }
 
 #section3 .project {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 #section3 .project .project-index {
-    width: 24%;
-    padding-left: 11%;
+  width: 24%;
+  padding-left: 11%;
 }
 
 #section3 .project .project-index h2 {
-    font-size: 70px;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 #section3 .project .slide-contorls ul {
-    margin: 20px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 #section3 .project .slide-contorls ul li {
-    text-align: right;
+  text-align: right;
 }
 
 #section3 .project-visual {
-    float: right;
-    margin-left: 130px;
-    margin-top: 20px;
-    width: 55%;
-    height: 640px;
-    font-size: 16px;
-    color: #888;
+  float: right;
+  margin-left: 130px;
+  margin-top: 20px;
+  width: 55%;
+  height: 640px;
+  font-size: 16px;
+  color: #888;
 }
 
 #section4 {
-    text-align: center;
+  text-align: center;
 }
 
 #section4 .mywork .work-btit {
-    font-size: 41px;
+  font-size: 41px;
 }
 
 #section5 h2 {
-    font-size: 45px;
-    text-align: center;
-    font-weight: 500;
+  font-size: 45px;
+  text-align: center;
+  font-weight: 500;
 }
 
 #section6 h2 {
-    font-size: 45px;
-    text-align: center;
-    font-weight: 500;
+  font-size: 45px;
+  text-align: center;
+  font-weight: 500;
 }
 
 #section6 h2 span {
-    color: #ff7c28;
+  color: #ff7c28;
 }
 
 #footer {
-    background: #f8c895;
-    width: 100%;
-    height: 265px;
-    margin: 35px auto 0 auto;
+  background: #f8c895;
+  width: 100%;
+  height: 265px;
+  margin: 35px auto 0 auto;
 }
 
 .footer {
-    height: 75px;
-    border-bottom: 1px solid #888;
+  height: 75px;
+  border-bottom: 1px solid #888;
 }
 
 .section {
-    height: 900px;
-    overflow: hidden;
+  height: 1000px;
+  overflow: hidden;
 }
 
 .fixed {
-    position: fixed;
-    width: 124px;
-    height: 101px;
-    right: 0;
-    top: 450px;
+  position: fixed;
+  width: 124px;
+  height: 101px;
+  right: 0;
+  top: 450px;
 }
 
 .fixed_1 {
-    background: rgb(248 200 149);
-    border-radius: 8px 0px 0px 8px;
-    width: 137px;
-    height: 32px;
-    margin: 6px 0;
+  background: rgb(248 200 149);
+  border-radius: 8px 0px 0px 8px;
+  width: 137px;
+  height: 32px;
+  margin: 6px 0;
 }
 
 .fixed_phone {
-    border-radius: 50%;
-    position: fixed;
-    width: 38px;
-    height: 38px;
-    bottom: 57px;
-    right: 57px;
-    background: #16b686;
+  border-radius: 50%;
+  position: fixed;
+  width: 38px;
+  height: 38px;
+  bottom: 57px;
+  right: 57px;
+  background: #16b686;
 }
 
 /* 스킬 부분 적용 */
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: block;
+  content: "";
+  clear: both;
+  display: block;
 }
 
 .progress-bar {
-    position: relative;
-    width: 960px;
-    height: 30px;
-    margin: 3em auto;
-    border: 1px solid green;
+  position: relative;
+  width: 960px;
+  height: 30px;
+  margin: 3em auto;
+  border: 1px solid green;
 }
 
 .progress-bar .bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    background-color: green;
-    /* animation: width 3s; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background-color: green;
+  /* animation: width 3s; */
 }
 
 @keyframes width {
-    to {
-        width: 30%;
-    }
+  to {
+    width: 30%;
+  }
 }
 
 .progress-bar .rate {
-    position: absolute;
-    top: 0;
-    right: 15px;
-    bottom: 0;
-    line-height: 30px;
-    font-size: 1.2em;
-    color: green;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  bottom: 0;
+  line-height: 30px;
+  font-size: 1.2em;
+  color: green;
 }
 
 .content {
-    height: 800px;
-    font-size: 3em;
+  height: 800px;
+  font-size: 3em;
 }
 
 .animation {
-    width: 80%;
-    margin: 3rem auto;
-    display: flex;
-    justify-content: center;
+  width: 80%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
 }
 
 .animation .chart {
-    margin: 0 20px;
-    position: relative;
+  margin: 0 20px;
+  position: relative;
 }
 
 .animation .chart h2 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999999;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999999;
+}
+.animation .chart h3 {
+  text-align: center;
+  font-weight: 100;
 }
 
 .animation .chart svg {
-    width: 172px;
-    height: 128px;
-    fill: #ebebeb;
-    stroke-width: 20;
-    stroke-dasharray: 315;
-    stroke-dashoffset: 315;
-    stroke: #ffc114;
-    transform: rotate(-90deg);
-    stroke-linecap: round;
+  width: 172px;
+  height: 128px;
+  fill: #ecbb9c36;
+  stroke-width: 17;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  stroke: #ffc114;
+  transform: rotate(45deg);
+  stroke-linecap: round;
 }
 
-.animation .chart:nth-child(1) circle {
-    stroke: aqua;
+.animation .chart circle {
+  stroke: rgb(255 124 40);
 }
-
-.animation .chart:nth-child(2) circle {
-    stroke: goldenrod;
+#section2-2 {
+  max-width: 1300px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
 }
-
-.animation .chart:nth-child(3) circle {
-    stroke: slateblue;
+#section2-2 .section2-2-wrap {
+  padding: 0 60px;
+  position: relative;
+}
+#section2-2 .section2-2-wrap > h2 {
+  font-size: 45px;
+  text-align: center;
+  font-weight: 500;
+  margin: 150px 0 0 0;
+}
+#section2-2 .animation {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+#section2-2 .animation .chart {
+  margin: 0rem 0 0;
+  position: relative;
+}
+#section2-2 .animation .chart svg {
+  width: 220px;
+  height: 220px;
+}
+#section2-2 .animation .chart h2 {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /* 스킬 부분 적용 끝 */
 /* work-slide */
 .slide_wrapper {
-    padding-top: 200px;
+  padding-top: 200px;
 }
 
 .slides {
-    left: 0;
-    top: 0;
-    width: 100%;
-    overflow-y: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow-y: hidden;
 }
 
 .slides.animated {
-    transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .slides li {
-    width: 20%;
-    background: #ccc;
-    float: left;
+  width: 20%;
+  background: #ccc;
+  float: left;
 }
 
 .controls {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .controls span {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 10px;
-    display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  display: inline-block;
 }
 
-@media (max-width:700px) {
-    .container {
-        width: 100%;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
 
-    .slide_wrapper {
-        width: 100%;
-    }
+  .slide_wrapper {
+    width: 100%;
+  }
 }
 
 /* work-slide 끝*/
 /* tap 구현 */
 .tab_wrap {
-    height: 350px;
+  height: 350px;
 }
 
 .tab_menu {
-    position: relative;
-    max-width: 1440px;
-    margin: auto;
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .tab_menu .list {
-    overflow: hidden;
-    display: flex;
-    border-bottom: solid 2px #ff7c28;
+  overflow: hidden;
+  display: flex;
+  border-bottom: solid 2px #ff7c28;
 }
 
 .tab_menu .list li {
-    float: left;
-    margin-right: 14px;
+  float: left;
+  margin-right: 14px;
 }
 
 .tab_menu .list li.is_on .btn {
-    font-weight: bold;
-    color: #ff7c28;
+  font-weight: bold;
+  color: #ff7c28;
 }
 
 .tab_menu .list .btn {
-    font-size: 22px;
-    font-weight: 600;
-    margin-left: 18px;
-    color: #222;
-    background: none;
-    border: none;
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 18px;
+  color: #222;
+  background: none;
+  border: none;
 }
 
 .tab_menu .cont_area .cont {
-    display: none;
-    position: absolute;
-    top: 25px;
-    left: 0;
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
 }
 
 /* tap 구현 끝 */

@@ -30,7 +30,7 @@ jQuery(function () {
           //아래로 섹션 다음(next())으로 이동  -120
           if (index < sections.length - 1) {
             //9개(8)이므로 마지막전(7)까지 사용
-            if (index != 2) {
+            if (index != 3) {
               //섹션 7번이 아니면 처리
               animation(index);
               $("html,body")
@@ -46,7 +46,7 @@ jQuery(function () {
         } else {
           //위로 섹션 이전(prev())으로 이동 120
           if (index > 0) {
-            if (index != 2) {
+            if (index != 3) {
               //섹션 7번이 아니면 처리
               $("html,body")
                 .stop()
@@ -69,14 +69,14 @@ jQuery(function () {
             //휠 이벤트 버블링 처리
             cnt++; //카운트 0 1 2 3 4 증가
           }
-          if (cnt >= 4) {
+          if (cnt >= 5) {
             //마지막이면
-            cnt = 4; //마지막으로 설정
+            cnt = 5; //마지막으로 설정
           }
           $(".slide_wrap")
             .stop()
             .animate({ left: -700 * cnt }, speed, function () {
-              if (cnt == 4) {
+              if (cnt == 5) {
                 //바로 위에서 슬라이드가 마지막으로 이동하고 그리고 다음 섹션으로 이동
                 $("html,body")
                   .stop()
