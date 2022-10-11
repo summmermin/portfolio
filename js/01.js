@@ -75,7 +75,7 @@ jQuery(function () {
           }
           $(".slide_wrap")
             .stop()
-            .animate({ left: -700 * cnt }, speed, function () {
+            .animate({ left: -1000 * cnt }, speed, function () {
               if (cnt == 5) {
                 //바로 위에서 슬라이드가 마지막으로 이동하고 그리고 다음 섹션으로 이동
                 $("html,body")
@@ -97,7 +97,7 @@ jQuery(function () {
           }
           $(".slide_wrap")
             .stop()
-            .animate({ left: -700 * cnt }, speed, function () {
+            .animate({ left: -1000 * cnt }, speed, function () {
               if (cnt == 0) {
                 //바로 위에서 슬라이드가 처음으로 이동하고 그리고 이전 섹션으로 이동
                 $("html,body")
