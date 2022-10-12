@@ -122,6 +122,9 @@ jQuery(function () {
           if (idx == 3) {
             $("#section5 .animation").addClass("in");
           }
+          if (idx == 4) {
+            $("#section6 .animation").addClass("in");
+          }
         }
       }); //mousewheel DOMMouseScroll 이벤트 끝
     }); // section 객체배열 처리 each() 메서드 끝
