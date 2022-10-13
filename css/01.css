@@ -444,9 +444,13 @@ header nav ul li.active a {
 #section4 {
   text-align: center;
 }
+#section4 .mywork{
+  margin: 45px 0 0 0;
+}
 
 #section4 .mywork .work-btit {
   font-size: 41px;
+  margin: 45px 0 55px 0;
 }
 
 #section5 h2 {
@@ -871,3 +875,33 @@ a {
   }
 }
 /* 주요사업부분 슬라이드 끝 */
+/* pager */
+.hidden {
+  display: block;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -999999px;
+}
+#brandVisual .buttonList::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#brandVisual .buttonList > li {
+  background: url(../img/btnVisual.png) no-repeat 0 -16px;
+  width: 16px;
+  height: 17px;
+  overflow: hidden;
+  position: relative;
+  top: 140px;
+  left: 50%;
+  float: left;
+  margin: 0 7px;
+  cursor: pointer;
+}
+#brandVisual .buttonList > .on {
+  background: url(../img/btnVisual.png) no-repeat 0 0;
+}
+/* pager 끝 */

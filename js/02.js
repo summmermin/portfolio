@@ -20,8 +20,8 @@ for (var i = 0; i < tabList.length; i++) {
 }
 
 // 경험 부분 슬라이드 구현
-var slidesC = document.querySelector('.ko_slides'),
-    slideC = document.querySelectorAll('.ko_slides li'),
+var slidesC = document.querySelector('.ko-slides'),
+    slideC = document.querySelectorAll('.ko-slides li'),
     currentIdxC = 0,
     slideCountC = slideC.length,
     slideWidthC = 300,
@@ -46,7 +46,7 @@ var slidesC = document.querySelector('.ko_slides'),
 
     //가로배열하기
     function slideLayout(sw, sm){
-        newslideW = document.querySelectorAll('.ko_slides li');
+        newslideW = document.querySelectorAll('.ko-slides li');
         moveAmtC = sw + sm;
         newslideW.forEach(function(item,index){
             item.style.left = moveAmtC*index +'px';
