@@ -1,5 +1,16 @@
 @charset "utf-8";
 
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #f24c4c;
+}
+
 .section {
   width: 100%;
   height: 100vh;
@@ -16,43 +27,36 @@
   margin: 0 auto;
   overflow: hidden;
 }
+
 .slide-container .slide-view .p5-btn .p5-btn-a {
-  background: linear-gradient(
-    90deg,
-    rgba(251, 120, 120, 1) 0%,
-    rgba(255, 175, 116, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(251, 120, 120, 1) 0%,
+      rgba(255, 175, 116, 1) 100%);
   padding: 10px;
   width: 44%;
   float: left;
   margin: 0 10px;
   text-align: center;
 }
+
 .slide-container .slide-view .p5-btn .p5-btn-a a {
   color: #fff;
 }
+
 .slide-container .slide-view .p5-btn .p5-btn-a a {
-  color: linear-gradient(
-    90deg,
-    rgba(251, 120, 120, 1) 0%,
-    rgba(255, 175, 116, 1) 100%
-  );
+  color: linear-gradient(90deg,
+      rgba(251, 120, 120, 1) 0%,
+      rgba(255, 175, 116, 1) 100%);
 }
-.slide-container .slide-view .p5-btn .p5-btn-a:hover {
-  box-shadow: 5px 5px 30px 0px rgb(251 122 120 / 35%);
-  background: linear-gradient(
-    90deg,
-    rgba(194, 120, 251, 1) 0%,
-    rgba(249, 115, 255, 1) 100%
-  );
-  transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
-}
+
 .project-1.p5 {
   margin-top: -85px;
 }
+
 .p5-tit {
   width: 300px;
 }
+
 .project-1.p5 .project-tit {
   margin: 65px 0 0 0;
 }
@@ -227,10 +231,11 @@ header nav ul li.active a {
 
 .main-visual .main-visual-tit {
   font-size: 44px;
-  margin-top: 10px;
+  margin-top: 43px;
   color: #444;
   position: relative;
 }
+
 .main-visual .s1-btn {
   width: 100%;
   display: flex;
@@ -241,28 +246,23 @@ header nav ul li.active a {
   z-index: 1000;
   font-size: 22px;
 }
+
 .main-visual .s1-btn .s1-btn-a {
-  background: linear-gradient(
-    90deg,
-    rgba(251, 120, 120, 1) 0%,
-    rgba(255, 175, 116, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(251, 120, 120, 1) 0%,
+      rgba(255, 175, 116, 1) 100%);
   border-radius: 10px;
   width: 170px;
   height: 30px;
   padding: 11px;
 }
+
 .main-visual .s1-btn .s1-btn-a:hover {
   box-shadow: 5px 5px 30px 0px rgb(251 122 120 / 35%);
-  background: linear-gradient(
-    90deg,
-    rgba(194, 120, 251, 1) 0%,
-    rgba(249, 115, 255, 1) 100%
-  );
   border-radius: 10px;
   transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
-  transform: scale(1.1, 1);
 }
+
 .main-visual .s1-btn a {
   color: #fff;
 }
@@ -278,6 +278,7 @@ header nav ul li.active a {
 #section1 {
   text-align: center;
 }
+
 #section2 .profile {
   display: flex;
   justify-content: center;
@@ -340,10 +341,12 @@ header nav ul li.active a {
   text-align: center;
   font-size: 18px;
 }
+
 #section2 .section2-contact {
   display: flex;
   justify-content: space-evenly;
 }
+
 #section2 .section2-contact a {
   display: block;
   height: 55px;
@@ -355,9 +358,11 @@ header nav ul li.active a {
   animation: waveBtn 2.5s infinite;
   background: transparent;
 }
+
 #section2 .section2-contact a img {
   margin: 14px 0 0 0;
 }
+
 .menu-li {
   width: 100%;
 }
@@ -365,6 +370,7 @@ header nav ul li.active a {
 .menu-li li {
   width: 50%;
 }
+
 .menu-li li span:last-child,
 #tab2 ul li span {
   font-family: sans-serif;
@@ -411,6 +417,7 @@ header nav ul li.active a {
   font-size: 16px;
   color: #888;
 }
+
 #section3 .pj-con {
   max-width: 687px;
 }
@@ -423,10 +430,12 @@ header nav ul li.active a {
   font-weight: 600;
   position: relative;
 }
+
 #section3 .project-tit ul li {
   color: #333;
   font-family: sans-serif;
 }
+
 #section3 .project-tit ul li.bold {
   color: #333;
   font-family: sans-serif;
@@ -434,6 +443,7 @@ header nav ul li.active a {
   color: #555;
   font-weight: 600;
 }
+
 #section3 .project-tit p {
   font-size: 12em;
   color: #eee;
@@ -444,7 +454,8 @@ header nav ul li.active a {
 #section4 {
   text-align: center;
 }
-#section4 .mywork{
+
+#section4 .mywork {
   margin: 45px 0 0 0;
 }
 
@@ -460,11 +471,14 @@ header nav ul li.active a {
   max-width: 860px;
   margin: 65px auto -48px;
 }
-#section5 .contact-img{
+
+#section5 .contact-img {
   width: 30%;
   float: left;
 }
-#section5 .contact-txt,#section5 .contact-watchout{
+
+#section5 .contact-txt,
+#section5 .contact-watchout {
   width: 60%;
   margin: 100px 50px 0 50px;
   float: right;
@@ -473,42 +487,34 @@ header nav ul li.active a {
 #section5 h2 span {
   color: #ff7c28;
 }
+
 #section5 .s5-btn .s5-btn-a {
-  background: linear-gradient(
-    90deg,
-    rgba(251, 120, 120, 1) 0%,
-    rgba(255, 175, 116, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(251, 120, 120, 1) 0%,
+      rgba(255, 175, 116, 1) 100%);
   padding: 10px;
   width: 44%;
   float: left;
   margin: 0 10px;
   text-align: center;
 }
+
 #section5 .s5-btn .s5-btn-a a {
   color: #fff;
 }
-#section5 .s5-btn{
+
+#section5 .s5-btn {
   float: right;
   width: 64%;
   margin: 100px 0;
 }
+
 #section5 .s5-btn .s5-btn-a a {
-  color: linear-gradient(
-    90deg,
-    rgba(251, 120, 120, 1) 0%,
-    rgba(255, 175, 116, 1) 100%
-  );
+  color: linear-gradient(90deg,
+      rgba(251, 120, 120, 1) 0%,
+      rgba(255, 175, 116, 1) 100%);
 }
-#section5 .s5-btn .s5-btn-a:hover {
-  box-shadow: 5px 5px 30px 0px rgb(251 122 120 / 35%);
-  background: linear-gradient(
-    90deg,
-    rgba(194, 120, 251, 1) 0%,
-    rgba(249, 115, 255, 1) 100%
-  );
-  transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
-}
+
 #footer {
   background: #f8c895;
   width: 100%;
@@ -625,6 +631,7 @@ a {
   transform: translate(-50%, -50%);
   z-index: 9999999;
 }
+
 .animation .chart h3 {
   text-align: center;
   font-weight: 100;
@@ -653,19 +660,23 @@ a {
   margin: 0 auto;
   padding: 0 30px;
 }
+
 #section2-2 .section2-2-wrap {
   padding: 0 60px;
   position: relative;
 }
-#section2-2 .section2-2-wrap > h2 {
+
+#section2-2 .section2-2-wrap>h2 {
   font-size: 45px;
   text-align: center;
   font-weight: 500;
   margin: 100px 0 0 0;
 }
-#section2-2 .section2-2-wrap > h2 img {
+
+#section2-2 .section2-2-wrap>h2 img {
   margin: 0 0 -57px -32px;
 }
+
 #section2-2 .animation {
   display: flex;
   width: 100%;
@@ -673,14 +684,17 @@ a {
   gap: 50px;
   justify-content: center;
 }
+
 #section2-2 .animation .chart {
   margin: 0rem 0 0;
   position: relative;
 }
+
 #section2-2 .animation .chart svg {
   width: 220px;
   height: 220px;
 }
+
 #section2-2 .animation .chart h2 {
   position: absolute;
   top: 46%;
@@ -781,9 +795,11 @@ a {
   top: 25px;
   left: 0;
 }
+
 #section2 .cont_area #tab2 {
   max-width: 588px;
 }
+
 #section2 .cont_area #tab2 li span:first-child {
   font-family: "GmarketSansMedium";
   color: #333;
@@ -791,15 +807,18 @@ a {
   line-height: 1.5;
   letter-spacing: -0.025em;
 }
+
 #tab2 .tab2-wrap ul {
   margin: 65px 0px;
   max-width: 588px;
   display: flex;
 }
+
 #tab2 .tab2-wrap ul li {
   width: 50%;
   margin: 0 60px 0 0;
 }
+
 /* tap 구현 끝 */
 /* project 부분 구현 */
 .frame {
@@ -807,6 +826,7 @@ a {
   max-width: 683px;
   width: 100%;
 }
+
 .frame img {
   width: 100%;
   position: absolute;
@@ -816,6 +836,7 @@ a {
   top: 0;
   background: #fff;
 }
+
 .frame a {
   width: 567px;
   height: 372px;
@@ -825,10 +846,12 @@ a {
   top: 32px;
   left: 53px;
 }
+
 /* project 부분 구현 끝*/
 .slide.newshoes {
   display: none;
 }
+
 /* 주요사업부분 슬라이드 */
 .ko-slide_container {
   width: 1400px;
@@ -859,6 +882,7 @@ a {
   height: 400px;
   position: absolute;
 }
+
 .ko-slides li {
   cursor: pointer;
 }
@@ -874,34 +898,100 @@ a {
     width: 100%;
   }
 }
+
 /* 주요사업부분 슬라이드 끝 */
-/* pager */
-.hidden {
-  display: block;
-  overflow: hidden;
-  width: 0;
-  height: 0;
-  line-height: 0;
-  text-indent: -999999px;
-}
-#brandVisual .buttonList::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-#brandVisual .buttonList > li {
-  background: url(../img/btnVisual.png) no-repeat 0 -16px;
-  width: 16px;
-  height: 17px;
-  overflow: hidden;
-  position: relative;
-  top: 140px;
-  left: 50%;
-  float: left;
-  margin: 0 7px;
+
+.box,.box2 {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  color: rgb(0 0 0);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.9s;
 }
-#brandVisual .buttonList > .on {
-  background: url(../img/btnVisual.png) no-repeat 0 0;
+
+.circle1:before {
+  content: '';
+  position: absolute;
+  top: 90px;
+  left: -30px;
+  background: rgb(251, 163, 1);
+  width: 140px;
+  height: 90px;
+  border-radius: 50%;
+  transition: all 0.9s;
 }
-/* pager 끝 */
+
+.circle1:after {
+  content: '';
+  position: absolute;
+  top: 70px;
+  left: 60px;
+  background: rgb(251, 163, 1);
+  width: 130px;
+  height: 120px;
+  border-radius: 50%;
+  transition: all 1.4s;
+}
+
+.circle2:before {
+  content: '';
+  position: absolute;
+  top: 90px;
+  left: 140px;
+  background: rgb(251, 163, 1);
+  width: 130px;
+  height: 90px;
+  border-radius: 50%;
+  transition: all 0.9s;
+}
+
+.box:hover a,.box2:hover a {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.box:hover .circle1:before,.box2:hover .circle1:before {
+  top: -13px;
+  transition: all 0.9s;
+}
+
+.box:hover .circle1:after,.box2:hover .circle1:after {
+  top: -13px;
+  transition: all 1s;
+}
+
+.box:hover .circle2:before,.box2:hover .circle2:before {
+  top: -13px;
+  transition: all 0.9s;
+}
+/* text effect */
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 456px;
+  color: #ff8801;
+  text-align: left;
+  transform: translate(-50%, -50%);
+
+}
+
+.loader:after {
+  content: '_';
+}
+/* text effect 끝 */
+/* 임시 */
+#section3{position: relative;}
+.slide-controls{font-size:3rem;}
+.slide-controls .left{position:absolute;  left:0; top:45%;cursor:pointer;padding:45px;}
+.slide-controls .right{position:absolute; right:0;  top:45%;cursor:pointer;padding:45px;}
+
+.pager {width:100%;text-align:center;}
+.pager div {display:inline-block;cursor:pointer;margin:0 10px;padding:0 5px;}
+.pager div.addPage {color:#f24c4c; }
