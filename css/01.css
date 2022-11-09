@@ -704,8 +704,6 @@ a {
   font-weight: 500;
 }
 
-/* 스킬 부분 적용 끝 */
-/* work-slide */
 .slide_wrapper {
   padding-top: 200px;
 }
@@ -752,8 +750,6 @@ a {
   }
 }
 
-/* work-slide 끝*/
-/* tap 구현 */
 .tab_wrap {
   height: 350px;
 }
@@ -818,9 +814,6 @@ a {
   width: 50%;
   margin: 0 60px 0 0;
 }
-
-/* tap 구현 끝 */
-/* project 부분 구현 */
 .frame {
   position: relative;
   max-width: 683px;
@@ -847,12 +840,6 @@ a {
   left: 53px;
 }
 
-/* project 부분 구현 끝*/
-.slide.newshoes {
-  display: none;
-}
-
-/* 주요사업부분 슬라이드 */
 .ko-slide_container {
   width: 1400px;
   margin: 0 auto;
@@ -898,8 +885,6 @@ a {
     width: 100%;
   }
 }
-
-/* 주요사업부분 슬라이드 끝 */
 
 .box,.box2 {
   width: 200px;
@@ -970,7 +955,6 @@ a {
   top: -13px;
   transition: all 0.9s;
 }
-/* text effect */
 .loader {
   position: absolute;
   top: 50%;
@@ -985,8 +969,6 @@ a {
 .loader:after {
   content: '_';
 }
-/* text effect 끝 */
-/* 임시 */
 #section3{position: relative;}
 .slide-controls{font-size:3rem;}
 .slide-controls .left{position:absolute;  left:0; top:45%;cursor:pointer;padding:45px;}
