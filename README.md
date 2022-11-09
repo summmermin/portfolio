@@ -31,11 +31,17 @@ Main design
 웹페이지 구현
 
 - 프로그램 및 언어
-- 
+
 HTML & CSS
+
 VanillaJS(ES6)
+
 jQuery
+
 REACT
+
 Photoshop
+
 Illustrator
+
 Figma
