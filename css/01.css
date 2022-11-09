@@ -7,8 +7,9 @@ html {
 body::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
 body::-webkit-scrollbar-thumb {
-  background-color: #f24c4c;
+  background-color: #216a06;
 }
 
 .section {
@@ -133,7 +134,7 @@ header nav ul li a.logo {
 }
 
 header nav ul li.active a {
-  color: red;
+  color: rgb(255, 94, 0);
   font-size: 15px;
 }
 
@@ -446,7 +447,7 @@ header nav ul li.active a {
 
 #section3 .project-tit p {
   font-size: 12em;
-  color: #eee;
+  color: rgb(250, 172, 128);
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
@@ -814,6 +815,7 @@ a {
   width: 50%;
   margin: 0 60px 0 0;
 }
+
 .frame {
   position: relative;
   max-width: 683px;
@@ -886,7 +888,8 @@ a {
   }
 }
 
-.box,.box2 {
+.box,
+.box2 {
   width: 200px;
   margin: 0 auto;
   margin-top: 30px;
@@ -934,27 +937,32 @@ a {
   transition: all 0.9s;
 }
 
-.box:hover a,.box2:hover a {
+.box:hover a,
+.box2:hover a {
   position: relative;
   color: #fff;
   z-index: 1;
   transition: all 0.5s;
 }
 
-.box:hover .circle1:before,.box2:hover .circle1:before {
+.box:hover .circle1:before,
+.box2:hover .circle1:before {
   top: -13px;
   transition: all 0.9s;
 }
 
-.box:hover .circle1:after,.box2:hover .circle1:after {
+.box:hover .circle1:after,
+.box2:hover .circle1:after {
   top: -13px;
   transition: all 1s;
 }
 
-.box:hover .circle2:before,.box2:hover .circle2:before {
+.box:hover .circle2:before,
+.box2:hover .circle2:before {
   top: -13px;
   transition: all 0.9s;
 }
+
 .loader {
   position: absolute;
   top: 50%;
@@ -969,11 +977,49 @@ a {
 .loader:after {
   content: '_';
 }
-#section3{position: relative;}
-.slide-controls{font-size:3rem;}
-.slide-controls .left{position:absolute;  left:0; top:45%;cursor:pointer;padding:45px;}
-.slide-controls .right{position:absolute; right:0;  top:45%;cursor:pointer;padding:45px;}
 
-.pager {width:100%;text-align:center;}
-.pager div {display:inline-block;cursor:pointer;margin:0 10px;padding:0 5px;}
-.pager div.addPage {color:#f24c4c; }
+#section3 {
+  position: relative;
+}
+
+.slide-controls {
+  font-size: 3rem;
+}
+
+.slide-controls .left {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  cursor: pointer;
+  padding: 45px;
+}
+
+.slide-controls .right {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  cursor: pointer;
+  padding: 45px;
+}
+
+.pager {
+  width: 100%;
+  text-align: center;
+}
+
+.pager div {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 0 5px;
+}
+
+.pager div.addPage {
+  color: #e3631b;
+}
+
+.newshoes .react {
+  position: absolute;
+  width: 275px;
+  bottom: 0;
+}
