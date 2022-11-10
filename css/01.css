@@ -83,10 +83,8 @@ body::-webkit-scrollbar-thumb {
 .slide {
   float: left;
   width: 1000px;
-  /* height: 500px; */
 }
 
-/* section 스크롤이벤트 적용완료 */
 header {
   position: relative;
   left: 0;

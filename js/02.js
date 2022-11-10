@@ -1,4 +1,3 @@
-// 탭버튼 구현
 const tabList = document.querySelectorAll(".tab_menu .list li");
 const contents = document.querySelectorAll(".tab_menu .cont_area .cont");
 let activeCont = "";
@@ -19,7 +18,6 @@ for (var i = 0; i < tabList.length; i++) {
     });
 }
 
-// 경험 부분 슬라이드 구현
 var slidesC = document.querySelector('.ko-slides'),
     slideC = document.querySelectorAll('.ko-slides li'),
     currentIdxC = 0,
@@ -32,7 +30,6 @@ var slidesC = document.querySelector('.ko-slides'),
     newslideW,
     newslideWWidthC,
     newslideWWidthC = slideWidthC;
-//복사본 생성하기 clone
 for (var ioi = 0; ioi < maxSlidesC; ioi++) {
     var cloneSlideC = slideC[ioi].cloneNode(true);
     cloneSlideC.classList.add('cloneC');
@@ -44,7 +41,6 @@ for (var ioi = slideCountC - 1; ioi >= 0; ioi--) {
     slidesC.prepend(cloneSlideC);
 }
 
-//가로배열하기
 function slideLayout(sw, sm) {
     newslideW = document.querySelectorAll('.ko-slides li');
     moveAmtC = sw + sm;
@@ -55,7 +51,6 @@ function slideLayout(sw, sm) {
 }
 slideLayout(slideWidthC, slideMarginC);
 
-//중앙 배치하기  transform translateX(???)
 function setSlide() {
     var ulMoveAmtC = -slideCountC * moveAmtC + 'px';
     slidesC.style.transform = 'translateX(' + ulMoveAmtC + ')';
@@ -63,7 +58,6 @@ function setSlide() {
 }
 setSlide();
 
-//moveSlide 함수
 function moveSlide(num) {
     slidesC.style.left = moveAmtC * -num + 'px';
     currentIdxC = num;
@@ -83,7 +77,6 @@ function moveSlide(num) {
 
 }
 
-//자동슬라이드
 var timer = undefined;
 var slideWrapperC = document.querySelector('.slide_wrapper');
 
@@ -109,7 +102,6 @@ slideWrapperC.addEventListener('mouseleave', function () {
     autoSlide();
 });
 
-//반응형 슬라이드
 window.addEventListener('resize', function () {
     var currentWidthC = document.querySelector('body').offsetWidth;
 
