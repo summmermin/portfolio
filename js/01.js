@@ -35,7 +35,7 @@ jQuery(function(){
 					if( wheelDelta < 0 ){ 
 						if( index < $('.section').length-1 ){ 
 							if(index!=3){
-								$('html,body').stop().animate({scrollTop: $(this).next().offset().top },500);					
+								$('html,body').stop().animate({scrollTop: $(this).next().offset().top },200);					
 							}
 							else{ 			
 								that = $(this);
@@ -47,7 +47,7 @@ jQuery(function(){
 					else{  
 						if( index > 0 ){	
 							if(index!=3){ 
-								$('html,body').stop().animate({scrollTop: $(this).prev().offset().top },500);				
+								$('html,body').stop().animate({scrollTop: $(this).prev().offset().top },200);				
 							}
 							else{ 			
 								that = $(this);
@@ -69,7 +69,7 @@ jQuery(function(){
 								console.log(cnt);
 								$('.slide_wrap').stop().animate({left:-1000*cnt},1000, function(){
 									if(cnt==5){ 
-										$('html,body').stop().animate({scrollTop: that.next().offset().top },500);
+										$('html,body').stop().animate({scrollTop: that.next().offset().top },200);
                                     }                                
                                 });
                                
@@ -85,7 +85,7 @@ jQuery(function(){
 								
 								$('.slide_wrap').stop().animate({left:-1000*cnt},1000, function(){
 									if(cnt==0){ 
-										$('html,body').stop().animate({scrollTop: that.prev().offset().top },500);
+										$('html,body').stop().animate({scrollTop: that.prev().offset().top },200);
 									}
                                 });
 								pageFn();
@@ -107,7 +107,7 @@ jQuery(function(){
 				////////////////////////////////////////////////////////////////
 				
 				function mainSlide(){
-					$('.slide_wrap').stop().animate({left:-1000*cnt},500);
+					$('.slide_wrap').stop().animate({left:-1000*cnt},200);
 					pageFn(); //페이지 이벤트
 				}
 
