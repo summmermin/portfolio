@@ -30,9 +30,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .slide-container .slide-view .p5-btn .p5-btn-a {
-  background: linear-gradient(90deg,
-      rgba(251, 120, 120, 1) 0%,
-      rgba(255, 175, 116, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 120, 120, 1) 0%,
+    rgba(255, 175, 116, 1) 100%
+  );
   padding: 10px;
   width: 44%;
   float: left;
@@ -45,9 +47,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .slide-container .slide-view .p5-btn .p5-btn-a a {
-  color: linear-gradient(90deg,
-      rgba(251, 120, 120, 1) 0%,
-      rgba(255, 175, 116, 1) 100%);
+  color: linear-gradient(
+    90deg,
+    rgba(251, 120, 120, 1) 0%,
+    rgba(255, 175, 116, 1) 100%
+  );
 }
 
 .project-1.p5 {
@@ -61,7 +65,9 @@ body::-webkit-scrollbar-thumb {
 .project-1.p5 .project-tit {
   margin: 65px 0 0 0;
 }
-
+.vuejs-part {
+  margin-top: 45px;
+}
 /*슬라이드 전체길이설정*/
 .slide_wrap {
   position: relative;
@@ -247,9 +253,11 @@ header nav ul li.active a {
 }
 
 .main-visual .s1-btn .s1-btn-a {
-  background: linear-gradient(90deg,
-      rgba(251, 120, 120, 1) 0%,
-      rgba(255, 175, 116, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 120, 120, 1) 0%,
+    rgba(255, 175, 116, 1) 100%
+  );
   border-radius: 10px;
   width: 170px;
   height: 30px;
@@ -341,6 +349,12 @@ header nav ul li.active a {
   font-size: 18px;
 }
 
+.project-visual .vue {
+  position: absolute;
+  width: 275px;
+  bottom: 0;
+}
+
 #section2 .section2-contact {
   display: flex;
   justify-content: space-evenly;
@@ -412,7 +426,7 @@ header nav ul li.active a {
   float: right;
   margin-left: 130px;
   margin-top: 20px;
-  height: 680px;
+  height: 703px;
   font-size: 16px;
   color: #888;
 }
@@ -488,9 +502,11 @@ header nav ul li.active a {
 }
 
 #section5 .s5-btn .s5-btn-a {
-  background: linear-gradient(90deg,
-      rgba(251, 120, 120, 1) 0%,
-      rgba(255, 175, 116, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 120, 120, 1) 0%,
+    rgba(255, 175, 116, 1) 100%
+  );
   padding: 10px;
   width: 44%;
   float: left;
@@ -509,16 +525,17 @@ header nav ul li.active a {
 }
 
 #section5 .s5-btn .s5-btn-a a {
-  color: linear-gradient(90deg,
-      rgba(251, 120, 120, 1) 0%,
-      rgba(255, 175, 116, 1) 100%);
+  color: linear-gradient(
+    90deg,
+    rgba(251, 120, 120, 1) 0%,
+    rgba(255, 175, 116, 1) 100%
+  );
 }
 
 #footer {
   background: #f8c895;
   width: 100%;
   height: 265px;
-
 }
 
 .footer {
@@ -665,14 +682,14 @@ a {
   position: relative;
 }
 
-#section2-2 .section2-2-wrap>h2 {
+#section2-2 .section2-2-wrap > h2 {
   font-size: 45px;
   text-align: center;
   font-weight: 500;
   margin: 100px 0 0 0;
 }
 
-#section2-2 .section2-2-wrap>h2 img {
+#section2-2 .section2-2-wrap > h2 img {
   margin: 0 0 -57px -32px;
 }
 
@@ -839,6 +856,11 @@ a {
   top: 32px;
   left: 53px;
 }
+.frame a.qi-robot {
+  width: 489px;
+  margin-top: -93px;
+  height: 627px;
+}
 
 .ko-slide_container {
   width: 1400px;
@@ -900,7 +922,7 @@ a {
 }
 
 .circle1:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 90px;
   left: -30px;
@@ -912,7 +934,7 @@ a {
 }
 
 .circle1:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 70px;
   left: 60px;
@@ -924,7 +946,7 @@ a {
 }
 
 .circle2:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 90px;
   left: 140px;
@@ -969,11 +991,10 @@ a {
   color: #ff8801;
   text-align: left;
   transform: translate(-50%, -50%);
-
 }
 
 .loader:after {
-  content: '_';
+  content: "_";
 }
 
 #section3 {
